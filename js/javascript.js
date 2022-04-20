@@ -51,7 +51,7 @@ color: 'grey',
 }
 }
 
-// add geoJSON points layer*
+// add cluster
 async function addCelltowersGeoJson(url) {
 const response = await fetch(url)
 const data = await response.json()
