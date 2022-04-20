@@ -24,7 +24,7 @@ async function addDistrictsGeoJson(url) {
 const response = await fetch(url)
 const data = await response.json()
 const polygons = L.geoJson(data, {
-onEachFeature: popUPinfo,
+onEachFeature: popUPinfo(feature.properties.NIMI),
 })
 polygons.addTo(map)
 }
