@@ -13,7 +13,7 @@ const data = await response.json()
 const polygons = L.geoJson(data)
 polygons.addTo(map)
 }
-addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson') 
+
 
 // add popup to each feature
 function popUPinfo(feature, layer) {
