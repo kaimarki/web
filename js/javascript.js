@@ -15,6 +15,7 @@ polygons.addTo(map)
 }
 
 
+
 // add popup to each feature
 function popUPinfo(feature, layer) {
 layer.bindPopup(feature.properties.NIMI)
@@ -25,10 +26,13 @@ const response = await fetch(url)
 const data = await response.json()
 const polygons = L.geoJson(data, {
 onEachFeature: popUPinfo,
+style: polygonStyle,
 })
 polygons.addTo(map)
 }
 
+
+addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 
 // get color from feature property
 function getColor(property) {
@@ -56,13 +60,4 @@ color: 'grey',
 }
 }
 
-async function addDistrictsGeoJson(url) {
-const response = await fetch(url)
-const data = await response.json()
-const polygons = L.geoJson(data, {
-onEachFeature: popUPinfo,
-style: polygonStyle,
-})
-polygons.addTo(map)
-}
-addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
+
