@@ -29,3 +29,29 @@ onEachFeature: popUPinfo,
 polygons.addTo(map)
 }
 addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
+
+// get color from feature property
+function getColor(property) {
+switch (property) {
+case 1:
+return '#ff0000'
+case 13:
+return '#009933'
+case 6:
+return '#0000ff'
+case 7:
+return '#ff0066'
+default:
+return '#ffffff'
+}
+}
+// polygon style
+function polygonStyle(feature) {
+return {
+fillColor: getColor(feature.properties.OBJECTID),
+fillOpacity: 0.5,
+weight: 1,
+opacity: 1,
+color: 'grey',
+}
+}
