@@ -28,7 +28,7 @@ onEachFeature: popUPinfo,
 })
 polygons.addTo(map)
 }
-addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
+
 
 // get color from feature property
 function getColor(property) {
@@ -55,3 +55,5 @@ opacity: 1,
 color: 'grey',
 }
 }
+
+addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
