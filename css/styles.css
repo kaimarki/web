@@ -73,13 +73,13 @@ li a:hover:not(.active2) {
   transition-duration: 0.4s;
   cursor: pointer;
 }
-.button2 {
+.button1 {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
 }
 
-.button2:hover {
+.button1:hover {
   background-color: #008CBA;
   color: white;
 }
