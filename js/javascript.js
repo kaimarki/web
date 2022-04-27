@@ -44,7 +44,7 @@ return '#5ab4ac'
 function polygonStyle(feature) {
 return {
 fillColor: getColor(feature.properties.OBJECTID),
-fillOpacity: 0.3,
+fillOpacity: 0.6,
 weight: 1,
 opacity: 1,
 color: 'grey',
