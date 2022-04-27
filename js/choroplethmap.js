@@ -20,7 +20,7 @@ async function addGeoJson(url) {
     const data = await response.json()
     L.choropleth(data, {
         valueProperty: 'OBJECTID',
-        scale: ['#ffffff', '#ff9900'],
+        scale: ['#ffffcc', '#a1dab4','#41b6c4','#2c7fb8','#253494'],
         steps: 5,
         mode: 'q', // q for quantile, e for equidistant
         style: {
