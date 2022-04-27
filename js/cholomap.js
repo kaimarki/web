@@ -30,7 +30,7 @@ weight: 2,
 fillOpacity: 0.7,
 },
 onEachFeature: function (feature, layer) {
-layer.bindPopup('Value: ' + feature.properties.OBJECTID)
+layer.bindPopup('Towers: ' + feature.properties.TOWERS)
 },
 }).addTo(map)
 }
