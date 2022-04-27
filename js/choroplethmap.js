@@ -29,7 +29,7 @@ async function addGeoJson(url) {
             fillOpacity: 0.6,
         },
         onEachFeature: function(feature, layer) {
-            layer.bindPopup('<b>Name</b>:'+feature.properties.NIMI+'<p><b>Towers</b>: ' + feature.properties.TOWERS)
+            layer.bindPopup('<b>Name</b>: '+feature.properties.NIMI+'<p><b>Towers</b>: ' + feature.properties.TOWERS)
         },
         
     }).addTo(map)
