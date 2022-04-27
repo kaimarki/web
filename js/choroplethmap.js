@@ -24,13 +24,12 @@ async function addGeoJson(url) {
         steps: 5,
         mode: 'e', // q for quantile, e for equidistant
         style: {
-            color: 'grey',
+            color: '#b2b2b2',
             weight: 2,
             fillOpacity: 0.6,
         },
         onEachFeature: function(feature, layer) {
-            layer.bindPopup('Towers: ' + feature.properties.TOWERS;
-                           'Name:' + feature.properties.NIMI)
+            layer.bindPopup('Towers: ' + feature.properties.TOWERS)
         },
     }).addTo(map)
 }
