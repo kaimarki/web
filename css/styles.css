@@ -8,13 +8,12 @@
 
 .title {
 	text-align:  center;
-	font-family: 'Trocchi', serif;
+	font-family: "Trocchi", serif;
 	color: #7c795d;
 	margin-top: 1rem ;
 	margin-bottom: 1rem;
 	font-size: 30;
 	font-weight: normal;
-	border: 2px solid grey;
 }
 .container {
 	padding-left:5%;
