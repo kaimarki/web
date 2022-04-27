@@ -33,19 +33,19 @@
 	border: 10px solid #635639;
 }
 
-ul {
+.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #404040;
+  background-color: #333;
 }
 
-li {
+.li {
   float: left;
 }
 
-li a {
+.li a {
   display: block;
   color: white;
   text-align: center;
@@ -53,8 +53,12 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #8c8c8c;
+.li a:hover:not(.active2) {
+  background-color: #111;
+}
+
+.active2 {
+  background-color: #04AA6D;
 }
 }
 }
