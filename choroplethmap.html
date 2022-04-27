@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <link rel="stylesheet" href="css/styles.css" />
-<title>Choropleth map</title>
+<title>Web GIS</title>
 </head>
 <Body background="img/pexels-johannes-plenio.jpg">
 
@@ -12,18 +12,20 @@
 <div>
 <img src="img/banner.jpg" width="100%" height="auto" alt="banner">
 </div>
-<nav>
-<a href="index.html">Basic map</a>
-<a class="active" href="choroplethmap.html">Choropleth Map</a>
-<a href="heatmap.html">Heatmap</a>
-</nav>
+
 
 <div class="title">
 <h1>Choropleth map</h1>
 </div>
-
+<nav>	
+<ul>
+  <li><a href="index.html">Basic map</a></li>
+  <li><a class="active2" href="choroplethmap.html">Choropleth map</a></li>
+  <li><a href="heatmap.html">Heatmap</a></li>
+</ul>
+</nav>
 <div class="container">
-	<button onclick="defaultMapSettings()">Default</button>
+	<button class="button button1" onclick="defaultMapSettings()">Tartu</button>
 	<div>
 	<div class="map" id="map"></div>
 	<p>There will be a map here</p>
