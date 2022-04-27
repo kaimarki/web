@@ -29,22 +29,22 @@ addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 function getColor(property) {
 switch (property) {
 case 1:
-return '#ff0000'
+return '#8c510a'
 case 13:
-return '#009933'
+return '#d8b365'
 case 6:
-return '#0000ff'
+return '#f6e8c3'
 case 7:
-return '#ff0066'
+return '#c7eae5'
 default:
-return '#ffffff'
+return '#5ab4ac'
 }
 }
 // polygon style
 function polygonStyle(feature) {
 return {
 fillColor: getColor(feature.properties.OBJECTID),
-fillOpacity: 0.5,
+fillOpacity: 0.3,
 weight: 1,
 opacity: 1,
 color: 'grey',
