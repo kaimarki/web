@@ -22,7 +22,7 @@ async function addGeoJson(url) {
         valueProperty: 'OBJECTID',
         scale: ['#fafa6e','#2A4858'],
         steps: 5,
-        mode: 'e', // q for quantile, e for equidistant
+        mode: 'q', // q for quantile, e for equidistant
         style: {
             color: '#b2b2b2',
             weight: 2,
