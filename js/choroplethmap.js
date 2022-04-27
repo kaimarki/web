@@ -20,13 +20,13 @@ async function addGeoJson(url) {
     const data = await response.json()
     L.choropleth(data, {
         valueProperty: 'OBJECTID',
-        scale: ['#ffffff', '#ff9900'],
+        scale: ['#fafa6e','#2A4858'],
         steps: 5,
-        mode: 'q', // q for quantile, e for equidistant
+        mode: 'e', // q for quantile, e for equidistant
         style: {
-            color: '#fff',
+            color: 'grey',
             weight: 2,
-            fillOpacity: 0.7,
+            fillOpacity: 0.6,
         },
         onEachFeature: function(feature, layer) {
             layer.bindPopup('Towers: ' + feature.properties.TOWERS;
