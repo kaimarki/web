@@ -24,7 +24,7 @@ async function addGeoJson(url) {
         steps: 5,
         mode: 'q', // q for quantile, e for equidistant
         style: {
-            color: 'grey',
+            color: 'red',
             weight: 2,
             fillOpacity: 0.6,
         },
